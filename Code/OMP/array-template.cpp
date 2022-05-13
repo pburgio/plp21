@@ -1,4 +1,6 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
+#include <omp.h>
 
 #define NUM 19
 int main()
@@ -23,9 +25,9 @@ int main()
 			arr[i] = i * 2;
 	}
 	
-	printf("\n----------------\n");
+	cout << "----------------" << endl;
 	for(i=0; i<NUM; i++)
-		printf("arr[%d] is %d\n", i, arr[i]);
+		cout << "arr[" << i << "] is  "<< arr[i] << endl;
 	
 	return 0;
 }
